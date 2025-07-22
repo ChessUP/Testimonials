@@ -108,9 +108,8 @@
     }
     
     .attribution {
-        font-size: 1.2em;
-        display: inline;
-        margin-top: -1em;
+        font-size: 1em;
+        /* margin-top: -1em; */
     }
     
 }
