@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.barlow-semi-condensed-thin {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+:root {
+--Barlow-Semi: "Barlow Semi Condensed", sans-serif;
+
+    /*### Primary*/
+
+--Purple50: hsl(260, 100%, 95%);
+--Purple300: hsl(264, 82%, 80%);
+--Purple500: hsl(263, 55%, 52%);
+
+    /* ### Neutral */
+
+--White: hsl(0, 0%, 100%);
+--Grey100: hsl(214, 17%, 92%);
+--Grey200: hsl(0, 0%, 81%);
+--Grey400: hsl(224, 10%, 45%);
+--Grey500: hsl(217, 19%, 35%);
+--Darkblue: hsl(219, 29%, 14%);
+--Black: hsl(0, 0%, 7%);
+
+}
+
+
+* {
+    margin: 0em;
+    padding: 0em;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+
+    font-family: var(--Barlow-Semi);
+    font-weight: 400;
+    padding-top: 3em; /* Espaço apenas no topo da página */
+    background-color: var(--Grey100);
+}
+
+
+img {
+    float: left; /*Ver mais*/
+    overflow: auto; /*Ver mais*/
+    border-radius: 50%;
+    margin-right: 1em;
+    width: 3vw;
+    
+    /* object-fit: cover; */ /*Ver mais*/
+}
+
+.clifford img, .abrams img {
+    /* border: 2px solid var(--Purple300); */
+}
+
+h2 {
+    margin-top: 1em;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+p {
+    padding-top: 1em;
+    font-size: .8em;
+}
+
+.title {
+    padding-top: 0em;
+    margin-top: .8em;
+    line-height: 0em;
+    font-weight: 600;
+}
+
+.subtitle {
+    color: var(--Grey100);
+}
+
+.harmon > .subtitle, .whittle > .subtitle {
+    color: var(--Grey400);
+} 
+
+.clifford, .walters, .harmon, .abrams, .whittle {
+    /* width: 100%; Ver o que o width faz com 100% */
+    /* max-width: 350px; Ver o max-width faz */
+    /* margin: 0 auto; Ver o que o margin 0 auto */
+    padding: 1.5em; /*Ver a diferença de padding para margin */
+    width: 90%;
+    margin: 1em auto; /*3em define o top e bottom, auto define left e right */
+    border-radius: .5em;
+    box-shadow: 1em .5em 1.7em rgba(0, 0, 0, .2);
+}
+
+.clifford {
+    background-color: var(--Purple500);
+    color: var(--White);
+    
+}
+
+.walters {
+    background-color: var(--Grey500);
+    color: var(--Grey100);
+   
+}
+
+.harmon {
+    background-color: var(--White);
+    color: var(--Grey500);
+}
+
+.abrams {
+    background-color: var(--Darkblue);
+    color: var(--Grey100);
+}
+
+.whittle {
+    background-color: var(--White);
+    color: var(--Grey500);
+}
+
+.attribution {
+    display: inline;
+}
